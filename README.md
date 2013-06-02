@@ -5,15 +5,19 @@
 1) clone the repositry
 
     git clone git@github.com:tom-muhm/angular-meteor-example.git
+    
+2) start the application - so meteroite can download the plugins:
 
-2) fix the error: __*Object #<Object> has no method 'require'*__ by replacing the first three lines in __*'.meteor/meteorite/packages/angularjs/server.js'*__ with:
+    mrt
+
+3) fix the error: __*Object #<Object> has no method 'require'*__ by replacing the first three lines in __*'.meteor/meteorite/packages/angularjs/server.js'*__ with:
 
     var connect = Npm.require("connect");
     var fs = Npm.require("fs");
     var path = Npm.require("path");
     var Fiber = Npm.require("fibers");
 
-(Note: this error only occurs for angulurjs v2.0.0 with meteor 6+)
+(Note: this error only occurs for the angulurjs plugin v2.0.0 with meteor 0.6+)
 
 ### Run
 
