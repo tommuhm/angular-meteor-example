@@ -2,7 +2,7 @@
 
 ### Setup
 
-1) clone the repositry
+clone the repositry
 
     git clone git@github.com:tom-muhm/angular-meteor-example.git
     
@@ -49,3 +49,12 @@
 5) copy the files from my repository 'angular-meteor-example.js' and 'public/angular.html' into your project
 
 6) fix the error: __*"Object #<Object> has no method 'require'"*__ by following step 2. from the setup above
+
+
+### Just some notes for myself
+
+acces meteor service from the browser console:
+
+    angular.element('[ng-controller=MeteorCtrl]').injector().get('$meteor')
+    angular.element('[ng-controller=MeteorCtrl]').injector().get('$meteor')('todos').find({})
+
